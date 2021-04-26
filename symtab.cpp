@@ -15,17 +15,6 @@ void SymbolTable::initReserved()
 
 	}
 	file.close();
-	/* FOR DEBUGGING - ADD '/' AT THE BEGGINNING 
-	map<string, shared_ptr<Token>>::iterator itr;
-	cout << "\nThe map symMap is : \n";
-	cout << "\tKEY\tELEMENT\n";
-	for (itr = symMap.begin(); itr != symMap.end(); ++itr) {
-		cout << '\t' << itr->first
-			<< '\t' << itr->second->getText() << '\n';
-	}
-	cout << endl;
-	// */
-	
 }
 
 shared_ptr<Token> SymbolTable::lookupToken(string text)
